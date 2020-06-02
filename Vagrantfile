@@ -22,10 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "private_network", ip: "192.168.11.2"
 
     config.vm.provider :virtualbox do |vb|
-        #cpus = `sysctl -n hw.ncpu`.to_i
-        #mem = `sysctl -n hw.memsize`.to_i / 1024 / 1024 / 4
-
-        vb.customize ["modifyvm", :id, "--memory", 1024]
+        vb.customize ["modifyvm", :id, "--memory", 2048]
         #vb.customize ["modifyvm", :id, "--cpus", 4]
 
         vb.customize ["modifyvm", :id, "--uartmode1", "disconnected"]
