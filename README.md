@@ -1,6 +1,6 @@
 # LAMP stack
 
-* ubuntu/xenial64
+* hashicorp/bionic64
 * Apache
 * mysql 5.7 (PW: root/root)
 * php 7.4
