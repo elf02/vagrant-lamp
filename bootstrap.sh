@@ -12,7 +12,7 @@ sudo debconf-set-selections <<< "mysql-server mysql-server/root_password passwor
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password root"
 
 echo "-- Install tools and helpers --"
-sudo apt-get install -y --force-yes python-software-properties htop curl git npm build-essential libssl-dev
+sudo apt-get install -y --force-yes python-software-properties htop curl git npm build-essential libssl-dev zip unzip
 
 echo "-- Install PPA's --"
 sudo add-apt-repository ppa:ondrej/php
