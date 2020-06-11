@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.synced_folder "./www", "/var/www/html",
         id: "core",
         :nfs => true,
-        :mount_options => ['nolock,vers=3,udp,noatime']
+        :mount_options => ['nolock,vers=3,udp,noatime,actimeo=2']
 
     #config.vm.synced_folder "./www", "/var/www/html",
     #    id: "vagrant-root",
